@@ -1,18 +1,32 @@
-#include <Arduino.h>
+/**
+ * Blink
+ *
+ * Turns on an LED on for one second,
+ * then off for one second, repeatedly.
+ */
+#include "Arduino.h"
 
-// put function declarations here:
-int myFunction(int, int);
+// Set LED_BUILTIN if it is not defined by Arduino framework
+#define LED_BUILTIN 2
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup()
+{
+  // initialize LED digital pin as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop()
+{
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);
+  Serial.println("HIGH");
+  // wait for a second
+  delay(1000);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);
+  Serial.println("LOW");
+   // wait for a second
+  delay(1000);
 }
