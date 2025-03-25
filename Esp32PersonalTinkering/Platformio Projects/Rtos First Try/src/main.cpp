@@ -1,3 +1,4 @@
+// Following https://www.youtube.com/watch?v=LONGI_JcwEQ&t=3s
 #include <Arduino.h>
 
 hw_timer_t * timer = NULL;
