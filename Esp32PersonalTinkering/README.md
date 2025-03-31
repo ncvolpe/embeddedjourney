@@ -24,14 +24,14 @@ IDEs
 	- Personal Comments:
 		- EXTREMELY confused. Digikey's tutorial series on FreeRTOS with ESP32 (Found here: https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz) 
 		  Uses Arduino IDE, but refers to ESP IDF FreeRTOS implementation stuff, and uses code that is only referred to in the ESP IDF FreeRTOS documentation:
-    		```c
-		// Use only core 1 for demo purposes
-		#if CONFIG_FREERTOS_UNICORE
-		  static const BaseType_t app_cpu = 0;
-		#else
-		  static const BaseType_t app_cpu = 1;
-		#endif
-		```
+```c
+// Use only core 1 for demo purposes
+#if CONFIG_FREERTOS_UNICORE
+	static const BaseType_t app_cpu = 0;
+#else
+	static const BaseType_t app_cpu = 1;
+#endif
+```
 
 		I could not find any reference to "CONFIG_FREERTOS_UNICORE" in my project directory, or anything when trying "Go To Declaration" in VSCode.
 		I found reference to this in the ESP IDF Project Configuration Documentation: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/kconfig.html#config-freertos-unicore
