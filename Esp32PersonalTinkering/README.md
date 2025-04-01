@@ -58,3 +58,7 @@ IDEs
 Current Task:
 Read This
 https://docs.platformio.org/en/latest/frameworks/espidf.html#tutorials
+
+
+PlatformIO is bad I guess
+Espressif IDF is supposedly better but I can't tell because Espressif has the worst installation issues I've ever had
