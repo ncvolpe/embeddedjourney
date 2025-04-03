@@ -59,6 +59,7 @@ Current Task:
 Read This
 https://docs.platformio.org/en/latest/frameworks/espidf.html#tutorials
 
-
-PlatformIO is bad I guess
-Espressif IDF is supposedly better but I can't tell because Espressif has the worst installation issues I've ever had
+Espressif has very configurable traits in comparison to the other frameworks that I am familiar with.
+Actually, stm32 is significantly more configurable than this. 
+Anyways, it is very different in comparison.
+I am ovrethinking clearly. Let's write out on paper!
